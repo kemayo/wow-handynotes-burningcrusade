@@ -391,3 +391,94 @@ ns.RegisterPoints(ns.BLOODMYST, {
 --         npc=18241,
 --         --},tameable=132186,
 --     },
+
+-- Spirit healers
+local spirit = {
+    label="{npc:6491:Spirit Healer}",
+    texture=ns.atlas_texture("poi-graveyard-neutral", {r=0.5, g=1, b=1}),
+    IsActive=function(point) return UnitIsDead("player") end,
+    group="spirithealer",
+}
+ns.RegisterPoints(ns.HELLFIRE, {
+    [22803780] = {},
+    [27406340] = {},
+    [54806640] = {},
+    [57403820] = {},
+    [60007980] = {},
+    [64402260] = {},
+    [68602700] = {},
+    [87205020] = {},
+}, spirit)
+ns.RegisterPoints(ns.ZANGARMARSH, {
+    [17004800] = {},
+    [36804740] = {},
+    [43403140] = {},
+    [47405020] = {},
+    [65005120] = {},
+    [77206400] = {},
+}, spirit)
+ns.RegisterPoints(ns.TEROKKAR, {
+    [22000380] = {},
+    [39802180] = {},
+    [44607120] = {},
+    [50601160] = {},
+    [59404260] = {},
+    [62808140] = {},
+}, spirit)
+ns.RegisterPoints(ns.BLADESEDGE, {
+    [33405860] = {},
+    [37202440] = {},
+    [38406780] = {},
+    [52006040] = {},
+    [60206620] = {},
+    [61401420] = {},
+    [62803740] = {},
+    [69205840] = {},
+    [74402660] = {},
+}, spirit)
+ns.RegisterPoints(ns.NAGRAND, {
+    [20203580] = {},
+    [32805620] = {},
+    [40203040] = {},
+    [42604620] = {},
+    [63406900] = {},
+    [66602460] = {},
+}, spirit)
+ns.RegisterPoints(ns.NETHERSTORM, {
+    [33806540] = {},
+    [42602920] = {},
+    [56408340] = {},
+    [64806640] = {},
+}, spirit)
+ns.RegisterPoints(ns.SHADOWMOON, {
+    [32202860] = {},
+    [39405620] = {},
+    [57405920] = {},
+    [63603220] = {},
+    [65404320] = {},
+    [65604300] = {},
+    -- [65804560] = {}, -- technically...
+}, spirit)
+ns.RegisterPoints(ns.AZUREMYST, {
+    [39001940] = {},
+    [47805600] = {},
+    [77604880] = {},
+}, spirit)
+ns.RegisterPoints(ns.BLOODMYST, {
+    [30404600] = {},
+    [58405800] = {},
+}, spirit)
+ns.RegisterPoints(ns.EVERSONG, {
+    [38201760] = {},
+    [44207100] = {},
+    [48004960] = {},
+    [60006400] = {},
+}, spirit)
+ns.RegisterPoints(ns.GHOSTLANDS, {
+    [43802580] = {},
+    [61405680] = {},
+    [80406920] = {},
+}, spirit)
+ns.RegisterPoints(ns.QUELDANAS, {
+    [46603260] = {},
+}, spirit)
