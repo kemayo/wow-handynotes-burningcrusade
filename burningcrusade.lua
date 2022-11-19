@@ -314,16 +314,19 @@ ns.RegisterPoints(ns.KARAZHAN_SERVANTS, {
     --48003660,50404320,59602870,65603240,
     [] = { -- Hyakiss the Lurker
         npc=16179,
+        loot={30678,30677,30676,30675},
         --tameable=true,
     },
     --48602780,59003560,59602870,64802980,
     [] = { -- Shadikith the Glider
         npc=16180,
+        loot={30683,30682,30681,30680},
         --tameable=132182,
     },
     --58201960,59602870,66801820,72001980,
     [] = { -- Rokad the Ravager
         npc=16181,
+        loot={30687,30686,30685,30684},
         --tameable=877481,
     },
 })
