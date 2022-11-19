@@ -8,23 +8,43 @@ ns.groups = {
     spirithealer = "{npc:6491:Spirit Healer}",
 }
 
-ns.OUTLAND = 101
-ns.HELLFIRE = 100
-ns.ZANGARMARSH = 102
-ns.BLADESEDGE = 105
-ns.NETHERSTORM = 109
-ns.NAGRAND = 107
-ns.TEROKKAR = 108
-ns.SHADOWMOON = 104
+if ns.CLASSIC then
+    ns.OUTLAND = 1945
+    ns.HELLFIRE = 1944
+    ns.ZANGARMARSH = 1946
+    ns.BLADESEDGE = 1949
+    ns.NETHERSTORM = 1953
+    ns.NAGRAND = 1951
+    ns.TEROKKAR = 1952
+    ns.SHADOWMOON = 1948
 
-ns.AZUREMYST = 97
-ns.BLOODMYST = 106
-ns.EVERSONG = 94
-ns.GHOSTLANDS = 95
+    ns.AZUREMYST = 1943
+    ns.BLOODMYST = 1950
+    ns.EVERSONG = 1941
+    ns.GHOSTLANDS = 1942
 
-ns.QUELDANAS = 122
+    ns.QUELDANAS = 1957
 
-ns.KARAZHAN_SERVANTS = 350
+    -- ns.KARAZHAN_SERVANTS = 350
+else
+    ns.OUTLAND = 101
+    ns.HELLFIRE = 100
+    ns.ZANGARMARSH = 102
+    ns.BLADESEDGE = 105
+    ns.NETHERSTORM = 109
+    ns.NAGRAND = 107
+    ns.TEROKKAR = 108
+    ns.SHADOWMOON = 104
+
+    ns.AZUREMYST = 97
+    ns.BLOODMYST = 106
+    ns.EVERSONG = 94
+    ns.GHOSTLANDS = 95
+
+    ns.QUELDANAS = 122
+
+    -- ns.KARAZHAN_SERVANTS = 350
+end
 
 ns.BLOODY_RARE = 1312,
 
