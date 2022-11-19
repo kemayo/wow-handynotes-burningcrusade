@@ -1,0 +1,8 @@
+package-as: HandyNotes_BurningCrusade
+
+manual-changelog:
+   filename: CHANGELOG.md
+   markup-type: markdown
+
+externals:
+   lib/LibUIDropDownMenu: https://repos.curseforge.com/wow/libuidropdownmenu/trunk/LibUIDropDownMenu
