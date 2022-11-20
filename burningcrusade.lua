@@ -115,7 +115,7 @@ ns.RegisterPoints(ns.ZANGARMARSH, {
     achievement=ns.BLOODY_RARE, criteria=4507,
     npc=18681,
     loot={31244,31246,31243,31242},
-    notes="Many spawn points, around Naga huts",
+    note="Many spawn points, around Naga huts",
 })
 ns.RegisterPoints(ns.ZANGARMARSH, {
     -- Bog Lurker
@@ -138,8 +138,8 @@ ns.RegisterPoints(ns.NAGRAND, {
 })
 ns.RegisterPoints(ns.NAGRAND, {
     -- Goretooth
-    [33205100] = {route={33205100, 36404480, 40804290, 43204000, 45204260, 45204640, 43004780, r=0, g=1, b=0},notes="Underwater"},
-    [58202780] = {notes="Underwater"},
+    [33205100] = {route={33205100, 36404480, 40804290, 43204000, 45204260, 45204640, 43004780, r=0, g=1, b=0},note="Underwater"},
+    [58202780] = {note="Underwater"},
     [77608120] = {route={77608120, 75007620, r=0, g=1, b=0}},
 }, {
     achievement=ns.BLOODY_RARE, criteria=4513,
@@ -166,7 +166,7 @@ ns.RegisterPoints(ns.TEROKKAR, {
     achievement=ns.BLOODY_RARE, criteria=4520,
     npc=18685,
     loot={31227,31228,31229,31231},
-    notes="Up in the trees",
+    note="Up in the trees",
 })
 ns.RegisterPoints(ns.TEROKKAR, {
     -- Doomsayer Jurim
@@ -190,7 +190,7 @@ ns.RegisterPoints(ns.TEROKKAR, {
     achievement=ns.BLOODY_RARE, criteria=4509,
     npc=18689,
     loot={31238},
-    notes="Wanders the Bone Wastes",
+    note="Wanders the Bone Wastes",
 })
 ns.RegisterPoints(ns.TEROKKAR, {
     [76208100] = { -- Hawkbane
@@ -374,7 +374,7 @@ ns.RegisterPoints(ns.BLOODMYST, {
 }, {
         npc=22060,
         loot={31256,31263,31264},
-        notes="{spell:1784:Stealth}",
+        note="{spell:1784:Stealth}",
 })
 
 -- ns.RegisterPoints(66, { -- desolace
