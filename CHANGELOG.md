@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v2
+
+* Fix a few typos that were stopping some notes and routes displaying
+
 ## Changed in v1
 
 * Initial release
