@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v4.1
+
+* Fix an error in Wrath Classic when showing comparison tooltips
+
 ## Changed in v4
 
 * Update for 1.1.0
