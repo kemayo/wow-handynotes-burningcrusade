@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v6
+
+* Update for 11.0.0 / 4.4.0
+
 ## Changed in v5
 
 * Update for 10.2.0 / 3.4.2
