@@ -1,4 +1,4 @@
-## Interface: 110005, 40401
+## Interface: 110007, 40401
 ## Title: HandyNotes: Burning Crusade
 ## Notes: Where are the interesting things in Outland?
 ## Author: Kemayo
