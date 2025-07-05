@@ -8,7 +8,7 @@ ns.groups = {
     spirithealer = "{npc:6491:Spirit Healer}",
 }
 
-if ns.CLASSIC then
+if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE and LE_EXPANSION_LEVEL_CURRENT <= LE_EXPANSION_CATACLYSM then
     ns.OUTLAND = 1945
     ns.HELLFIRE = 1944
     ns.ZANGARMARSH = 1946
