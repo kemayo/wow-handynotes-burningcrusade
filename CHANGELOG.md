@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v12
+
+* Fixed mobs not showing in Mists Classic
+* Azuremyst: update Blood Elf Bandit coords
+
 ## Changed in v11
 
 * Updated for 11.1.7, 5.5.0, 3.4.4
