@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v13
+
+* Updated for 11.2.0, 3.4.5
+* Bring in systems improvements from [my War Within plugin](https://www.curseforge.com/wow/addons/handynotes-war-within), notably:
+    * Fix creating waypoints for all related points from the right-click menu. Thanks to Taurenkey for this!
+
 ## Changed in v12
 
 * Fixed mobs not showing in Mists Classic
