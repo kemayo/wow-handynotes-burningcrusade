@@ -17,7 +17,9 @@ if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE and LE_EXPANSION_LEVEL_CURRENT <= LE_E
     ns.NAGRAND = 1951
     ns.TEROKKAR = 1952
     ns.SHADOWMOON = 1948
+    ns.SHATTRATH = 1955
 
+    ns.EXODAR = 1947
     ns.AZUREMYST = 1943
     ns.BLOODMYST = 1950
     ns.EVERSONG = 1941
@@ -35,7 +37,9 @@ else
     ns.NAGRAND = 107
     ns.TEROKKAR = 108
     ns.SHADOWMOON = 104
+    ns.SHATTRATH = 111
 
+    ns.EXODAR = 103
     ns.AZUREMYST = 97
     ns.BLOODMYST = 106
     ns.EVERSONG = 94
@@ -476,3 +480,91 @@ ns.RegisterPoints(ns.GHOSTLANDS, {
 ns.RegisterPoints(ns.QUELDANAS, {
     [46603260] = {},
 }, spirit)
+
+-- Flight masters
+if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
+    local faction = UnitFactionGroup("player")
+    local FLIGHTMASTER = ns.nodeMaker{
+        label=MINIMAP_TRACKING_FLIGHTMASTER, -- Flight Master
+        group=TUTORIAL_TITLE35, -- Travel
+        atlas="FlightMaster",
+    }
+    ns.RegisterPoints(ns.SHATTRATH, {
+        [63604040] = {note="{npc:18940}"}, -- Nutral
+    }, FLIGHTMASTER{translate={[ns.TEROKKAR]=true}})
+    ns.RegisterPoints(ns.NETHERSTORM, {
+        [45203480] = {note="{npc:19583}"}, -- Grennik
+        [65206680] = {note="{npc:20515}"}, -- Harpax
+        [33806400] = {note="{npc:18938}"}, -- Krexcil
+    }, FLIGHTMASTER{})
+    ns.RegisterPoints(ns.SHADOWMOON, {
+        [63203040] = {note="{npc:19581}"}, -- Maddix
+        [56205780] = {note="{npc:21766}"}, -- Alieshor
+    }, FLIGHTMASTER{})
+
+    if faction == "Alliance" then
+        ns.RegisterPoints(ns.HELLFIRE, {
+            [54606240] = {note="{npc:16822}"}, -- Flightmaster Krill Bitterhue
+            [78403500] = {note="{npc:20234}"}, -- Runetog Wildhammer
+            [87405240] = {note="{npc:18931}"}, -- Amish Wildhammer
+            [25203720] = {note="{npc:18785}"}, -- Kuma
+        }, FLIGHTMASTER{})
+        ns.RegisterPoints(ns.ZANGARMARSH, {
+            [41202880] = {note="{npc:22485}"}, -- Halu
+            [67805140] = {note="{npc:18788}"}, -- Munci
+        }, FLIGHTMASTER{})
+        ns.RegisterPoints(ns.TEROKKAR, {
+            [59405540] = {note="{npc:18809}"}, -- Furnan Skysoar
+        }, FLIGHTMASTER{})
+        ns.RegisterPoints(ns.NAGRAND, {
+            [54207500] = {note="{npc:18789}"}, -- Furgu
+        }, FLIGHTMASTER{})
+        ns.RegisterPoints(ns.BLADESEDGE, {
+            [37806140] = {note="{npc:18937}"}, -- Amerun Leafshade
+            [61603940] = {note="{npc:22216}"}, -- Fhyn Leafshadow
+            [61007040] = {note="{npc:21107}"}, -- Rip Pedalslam
+        }, FLIGHTMASTER{})
+        ns.RegisterPoints(ns.SHADOWMOON, {
+            [37405540] = {note="{npc:18939}"}, -- Brubeck Stormfoot
+        }, FLIGHTMASTER{})
+
+        ns.RegisterPoints(ns.EXODAR, {
+            [68406340] = {note="{npc:17555}"}, -- Stephanos
+        }, FLIGHTMASTER{parent=true})
+        ns.RegisterPoints(ns.BLOODMYST, {
+            [57405420] = {note="{npc:17554}"}, -- Laando
+        }, FLIGHTMASTER{})
+    elseif faction == "Horde" then
+        ns.RegisterPoints(ns.HELLFIRE, {
+            [27806000] = {note="{npc:18942}"}, -- Innalia
+            [61408120] = {note="{npc:19558}"}, -- Amilya Airheart
+            [56203620] = {note="{npc:16587}"}, -- Barley
+            [87404820] = {note="{npc:18930}"}, -- Vlagga Freyfeather
+        }, FLIGHTMASTER{})
+        ns.RegisterPoints(ns.ZANGARMARSH, {
+            [84805500] = {note="{npc:20762}"}, -- Gur'zil
+            [33005100] = {note="{npc:18791}"}, -- Du'ga
+        }, FLIGHTMASTER{})
+        ns.RegisterPoints(ns.TEROKKAR, {
+            [49204340] = {note="{npc:18807}"}, -- Kerna
+        }, FLIGHTMASTER{})
+        ns.RegisterPoints(ns.NAGRAND, {
+            [57203520] = {note="{npc:18808}"}, -- Gursha
+        }, FLIGHTMASTER{})
+        ns.RegisterPoints(ns.BLADESEDGE, {
+            [52005420] = {note="{npc:18953}"}, -- Unoke Tenderhoof
+            [61603940] = {note="{npc:22216}"}, -- Fhyn Leafshadow
+            [76406580] = {note="{npc:22455}"}, -- Sky-Master Maxxor
+        }, FLIGHTMASTER{})
+        ns.RegisterPoints(ns.SHADOWMOON, {
+            [30202920] = {note="{npc:19317}"}, -- Drek'Gol
+        }, FLIGHTMASTER{})
+
+        ns.RegisterPoints(ns.EVERSONG, {
+            [54405080] = {note="{npc:16192}"}, -- Skymistress Gloaming
+        }, FLIGHTMASTER{})
+        ns.RegisterPoints(ns.GHOSTLANDS, {
+            [45403040] = {note="{npc:16189}"}, -- Skymaster Sunwing
+        }, FLIGHTMASTER{})
+    end
+end
