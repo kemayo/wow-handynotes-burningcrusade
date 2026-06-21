@@ -530,7 +530,7 @@ if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
 
         ns.RegisterPoints(ns.EXODAR, {
             [68406340] = {note="{npc:17555}"}, -- Stephanos
-        }, FLIGHTMASTER{parent=true})
+        }, FLIGHTMASTER{translate={[ns.AZUREMYST]=true}})
         ns.RegisterPoints(ns.BLOODMYST, {
             [57405420] = {note="{npc:17554}"}, -- Laando
         }, FLIGHTMASTER{})
