@@ -568,6 +568,8 @@ if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
 
         ns.RegisterPoints(ns.EVERSONG, {
             [54405080] = {note="{npc:16192}"}, -- Skymistress Gloaming
+            [44007000] = {note="{npc:44036}", requires=ns.conditions.Expansion(LE_EXPANSION_MISTS_OF_PANDARIA)}, -- Skymaster Brightdawn
+            [46204680] = {note="{npc:44244}", requires=ns.conditions.Expansion(LE_EXPANSION_MISTS_OF_PANDARIA)}, -- Skymaster Skyles
         }, FLIGHTMASTER{})
         ns.RegisterPoints(ns.GHOSTLANDS, {
             [45403040] = {note="{npc:16189}"}, -- Skymaster Sunwing
