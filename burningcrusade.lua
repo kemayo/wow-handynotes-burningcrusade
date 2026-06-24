@@ -501,6 +501,12 @@ if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
         [63203040] = {note="{npc:19581}"}, -- Maddix
         [56205780] = {note="{npc:21766}"}, -- Alieshor
     }, FLIGHTMASTER{})
+    ns.RegisterPoints(ns.GHOSTLANDS, {
+        [74606700] = {note="{npc:24851}"}, -- Kiz Coilspanner
+    }, FLIGHTMASTER{})
+    ns.RegisterPoints(ns.QUELDANAS, { -- Isle of Quel'Danas
+        [48402520] = {note="{npc:26560}"}, -- Ohura
+    }, FLIGHTMASTER{})
 
     if faction == "Alliance" then
         ns.RegisterPoints(ns.HELLFIRE, {
