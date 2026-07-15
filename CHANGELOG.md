@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v21
+
+* Updated for 2.5.6
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures)
+
 ## Changed in v20
 
 * Show flight masters for non-retail clients
