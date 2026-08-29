@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v26
+
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures), notably:
+    * When Blizzard's own map pin already shows extra content, the plugin now attaches its tooltip below instead of showing nothing
+
 ## Changed in v25
 
 * Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures), notably:
